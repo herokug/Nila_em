@@ -5,7 +5,6 @@
     "main": "index.js",
     "type": "commonjs",
     "scripts": {
-    "scripts": {
         "start": "supervisor -w lib,index.js,globle.js index.js",
         "test": "node index.js"
     } ,
