@@ -1,9 +1,11 @@
-FROM nila/herokug:md-beta
+FROM node:lts-buster
 
-RUN git clone https://github.com/herokug/Nila2 /root/nila
-WORKDIR /root/nila/
-ENV TZ=Europe/Istanbul
-RUN yarn add supervisor -g
-RUN yarn install --no-audit
+RUN rm -rf /var/lib/apt/lists/*
+
+COPY package.json .
+
+RUN npm install
+
+COPY . .
 
 CMD ["node", "."]
