@@ -5,8 +5,7 @@
     "main": "index.js",
     "type": "commonjs",
     "scripts": {
-        "start": "supervisor -w lib,index.js,globle.js index.js",
-        "test": "node index.js"
+    "start": "supervisor -s bot.js"
     },
     "homepage": "https://s",
     "author": {
