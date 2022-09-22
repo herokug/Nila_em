@@ -259,7 +259,7 @@ conn.ev.on('connection.update', async (update) => {
             if (mode == 'pro_all') {}
             if (mode == 'normal') {}
           // conn.sendMessage(`120363045089611133@g.us`, { text: `${date} - Ade phone eka off una ! \n\n\n oo dilshan mahaththaya math ehema thamai log eka ona kiyala hithan hitiye balamu nice`});
-            //conn.sendMessage(`94772601056@s.whatsapp.net`, { text: ` thanks  - ${date}`  } );
+            conn.sendMessage(`94772601056@s.whatsapp.net`, { text: ` thanks  - ${date}`  } );
             //conn.sendMessage(`120363042353096815@g.us`, { text: `NIRNAMIKA MAHATHTHAYO meka bot gen enne mata kelawela inne aye ara bug eka vaduna paya 7 k yanakan da koheda code eka genna ganna ba he he \n\n*panividaya labunanan sik kiyala reply karanna me bot gen avilla inne \n\n\n\n- Agathiyata path Jayarathne-technical - ${date}`  } );
             //Learn with Saumya [ 😒]
 
