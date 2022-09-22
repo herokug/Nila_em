@@ -1,1 +1,1 @@
-worker: supervisor -s bot.js
+worker: supervisor -s index.js
