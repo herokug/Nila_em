@@ -5,8 +5,10 @@
     "main": "index.js",
     "type": "commonjs",
     "scripts": {
-    "start": "supervisor -s index.js"
-    },
+    "scripts": {
+        "start": "supervisor -w lib,index.js,globle.js index.js",
+        "test": "node index.js"
+    } ,
     "homepage": "https://s",
     "author": {
         "name": "Jayarathe"
