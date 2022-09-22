@@ -23,6 +23,8 @@ async (m, conn , { jf }) => {
 
     try {
 
+       
+       // simple eken jf.victim_id 
 
     const group_jid = m.text.split('/')[1].split('[')[0]
     const tagged = jf.victim_id
