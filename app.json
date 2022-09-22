@@ -1,0 +1,40 @@
+{
+    "name": "Project_Nila",
+    "description": "whatsapp md bot build with nodejs && Baileys",
+    "repository": "",
+    "logo": "https://i.postimg.cc/T1wtY1ND/Menu2.jpg",
+    "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+      "env": {
+      "USER_NAME": 
+      {
+          "description": "Enter Your Name",
+          "value": "Dr. Dilshan",
+          "required": false
+      },
+      "HEROKU_API_KEY": 
+      {
+          "description": "Enter your Heroku api key",
+          "required": true
+      } ,
+  
+      "SONG_DOWN": {
+        "description": "ගීත Download කිරීමේදී ලැබෙන පණිවිඩය වෙනස් කිරීම!... මෙය අත්‍යවශ්‍යම නොවේ",
+        "required": false,
+        "value": "*Download කරමින් පවතී...*"
+        
+    }
+    
+    },
+    "buildpacks": [
+      {"url": "heroku/nodejs"},
+      {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"},
+      {"url": "https://github.com/yespark/heroku-imagemagick-buildpack"}
+    ],
+     "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "free"
+          }
+      }
+  }
+  
