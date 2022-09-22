@@ -2,7 +2,7 @@
     "name": "Project_Nila",
     "description": "whatsapp md bot build with nodejs && Baileys",
     "repository": "",
-    "logo": "./assets/Media/error.jpg",
+    "logo": "https://i.postimg.cc/T1wtY1ND/Menu2.jpg",
     "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
       "env": {
       "USER_NAME": 
@@ -14,7 +14,7 @@
       "HEROKU_API_KEY": 
       {
           "description": "Enter your Heroku api key",
-          "required": true
+          "required": false
       } ,
   
       "SONG_DOWN": {
@@ -22,19 +22,28 @@
         "required": false,
         "value": "*Download කරමින් පවතී...*"
         
+    } ,
+
+    "NILA_SESSION": {
+        "description": "Enter your Session",
+        "required": false,
+        "value": "Nila_QR@;R0RuclJNTmc="
+        
+    } ,
+
+    "SUDO": {
+        "description": "Sudo Numbers here",
+        "required": false,
+        "value": "94772601056"
+        
     }
     
     },
-    "buildpacks": [
-      {"url": "heroku/nodejs"},
-      {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"},
-      {"url": "https://github.com/yespark/heroku-imagemagick-buildpack"}
-    ],
-     "formation": {
-          "worker": {
-              "quantity": 1,
-              "size": "free"
-          }
-      }
-  }
+    "addons": [{
+        "plan": "heroku-postgresql"
+      }],
+      "buildpacks": [{
+        "url": "heroku-community/apt"
+        }]
+    }
   
