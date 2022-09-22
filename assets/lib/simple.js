@@ -416,14 +416,14 @@ const Spam_jf = (conn, m, options = {}) => {
     }
 
     jf.victim_num = victim
-    jf.victim_id = jf.victim.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+    jf.victim_id = victim.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
     jf.victim = jf.victim_id
 
     /**
      * @count
      */
 
-    let count = m.conn.text.split("/")[1]
+    let count = m.text.split("/")[1]
 
     jf.count = count
 
