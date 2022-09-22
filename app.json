@@ -2,7 +2,7 @@
     "name": "Project_Nila",
     "description": "whatsapp md bot build with nodejs && Baileys",
     "repository": "",
-    "logo": "https://i.postimg.cc/T1wtY1ND/Menu2.jpg",
+    "logo": "./assets/Media/error.jpg",
     "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
       "env": {
       "USER_NAME": 
