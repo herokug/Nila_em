@@ -11,4 +11,4 @@
    [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@Jayarathne-technical/Nila-Bot-Session)
    <hr>
    
-   [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/herokug/Nila2)
+   [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/herokug/Nila_em)
