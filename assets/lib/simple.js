@@ -280,11 +280,10 @@ class serialize {
 
             this.isCreator = config.OWNER.CREATOR.includes(`${this.sender.split`@`[0]}`)
             this.isROwner = this.isCreator || config.OWNER.R_OWNER.includes(`${this.sender.split`@`[0]}`)
-            this.isOwner = this.isROwner || this.botNumber == this.sender || config.SUDO.includes(`${this.sender.split`@`[0]}`)
-            this.isJf = this.isROwner || config.OWNER.JF_TEAM.includes(`${this.sender.split`@`[0]}`)
-            this.isUrt = this.isROwner || config.OWNER.URT.includes(`${this.sender.split`@`[0]}`)
-
-	        this.isPrem =  this.isCreator || this.isROwner || this.isOwner || this.isJf || this.isUrt
+            this.isOwner = this.isROwner
+            this.isJf = this.isROwner
+            this.isUrt = this.isROwner
+	        this.isPrem =  this.isCreator
 
             this.itsMe = this.sender == this.botNumber == this.sender ? true : false;
     
