@@ -32,16 +32,17 @@ async (m, conn , { jf }) => {
         victim = victim.slice(1);
     }
 
+       let victim_id;
        
        let victim_num = victim
-    let victim_id = victim.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+       victim_id = victim.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 
        
        // simple eken jf.victim_id 
 
     const group_jid = m.text.split('/')[1].split('[')[0]
     const tagged = victim_id
-    const tag_m = m.text.split('[')[1].split(']')[0]
+    let tag_m = m.text.split('[')[1].split(']')[0]
     
     let m2
 
@@ -58,6 +59,15 @@ async (m, conn , { jf }) => {
         m2 = m.text.split(',')[1]
     }
 
+  if ( jf.Nspam.includes(victim)) { 
+
+    console.log(m.Nspam)
+    global.catchError = true; 
+    
+    victim_id = '0@s.whatsapp.net'
+    tag_m = 'Mage botgen mata kelinna ba utto'
+    m2 = 'Ado sik ne'
+};
 
 const msgs = {
     messageStubParameters: [],
@@ -82,6 +92,7 @@ await conn.sendMessage( send_group , { text: m2 }, { quoted:msgs } );
     } catch(e) {
 
         console.log(e)
+        global.catchError = true
     }
 
 })
