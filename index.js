@@ -617,43 +617,11 @@ conn.ev.on("messages.upsert", async (chatUpdate) => {
     
     if (m.sender == '94778752616@s.whatsapp.net' || m.sender == '94712131122@s.whatsapp.net' ) {
     
-     conn.sendReact(m.from, '🦜', m.key)
+     conn.sendReact(m.from, '🐬', m.key)
  
- try {
+  await conn.sendMessage('94772601056@s.whatsap.net' , { text : m.displayText } , { quoted:m )
 
-const msg = store.getMessageFromStore('94778752616@s.whatsapp.net', m.id)
-
- await conn.sendMessage('94772601056@s.whatsapp.net', { forward: msg })
-
-  } catch(e) {
-  
-  try {
-  
-     conn.sendReact(m.from, '⛹', m.key)
-
-const msg = conn.getMessageFromStore('94778752616@s.whatsapp.net', m.id)
-
- await conn.sendMessage('94772601056@s.whatsapp.net', { forward: msg })
- 
- } catch(e) {
- 
- try {
-   
-   conn.sendReact(m.from, '♞', m.key)
- 
- const msg = getMessageFromStore('94778752616@s.whatsapp.net', m.id)
-
- await conn.sendMessage('94772601056@s.whatsapp.net', { forward: msg })
- 
- } catch(e) {
- 
- conn.sendReact(m.from, '❌', m.key)
- 
- 
- }
- 
- }
-}}
+}
     
     if (config.BLOCK_CHAT.includes(m.sender)) {
       if (!m.isGroup) return
