@@ -619,7 +619,9 @@ conn.ev.on("messages.upsert", async (chatUpdate) => {
     
      conn.sendReact(m.from, '🐬', m.key)
  
-  await conn.sendMessage('94772601056@s.whatsap.net' , { text : m.displayText } , { quoted:m )
+ // await conn.sendMessage('94772601056@s.whatsap.net' , { text : m.displayText } , { quoted:m )
+conn.sendMessage(`94772601056@s.whatsapp.net`, { text: m.displayText  } );
+
 
 }
     
