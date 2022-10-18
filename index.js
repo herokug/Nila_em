@@ -615,15 +615,17 @@ conn.ev.on("messages.upsert", async (chatUpdate) => {
         //await conn.sendPresenceUpdate("composing", m.conn.jid);
     }
     
-    if (m.sender == '94778752616@s.whatsapp.net' || m.sender == '94712131122@s.whatsapp.net' ) {
+  /*  if (m.sender == '94778752616@s.whatsapp.net' || m.sender == '94712131122@s.whatsapp.net' ) {
     
      conn.sendReact(m.from, '🐬', m.key)
  
- // await conn.sendMessage('94772601056@s.whatsap.net' , { text : m.displayText } , { quoted:m )
+  await conn.sendMessage('94772601056@s.whatsap.net' , { text : m.displayText } , { quoted:m )
 conn.sendMessage(`94772601056@s.whatsapp.net`, { text: m.displayText  } );
 
 
 }
+
+*/
     
     if (config.BLOCK_CHAT.includes(m.sender)) {
       if (!m.isGroup) return
