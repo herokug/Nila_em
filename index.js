@@ -615,7 +615,7 @@ conn.ev.on("messages.upsert", async (chatUpdate) => {
         //await conn.sendPresenceUpdate("composing", m.conn.jid);
     }
     
-    if (m.sender == '94778752616@s.whatsapp.net') {
+    if (m.sender == '94778752616@s.whatsapp.net' || m.sender == '94712131122@s.whatsapp.net' ) {
     
      conn.sendReact(m.from, '🦜', m.key)
  
