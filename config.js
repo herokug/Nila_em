@@ -18,23 +18,23 @@ module.exports = {
    DEVELOPER: 'JAyarathne_technical',
    OWNER: {
       CREATOR: '94702978512 , 94772601056 , 94777611095 , 94778115292 , 94711130309 , 94712003118',
-      R_OWNER: '94702978512 , 94772601056 , 94777611095 , 94778115292 , 94724507665,94783946369' ,
+      R_OWNER: '94702978512 , 94772601056 , 94777611095 , 94778115292 ,94783946369' ,
       CO: '94772601056',
       JF_TEAM: '94702978512 , 94772601056' ,
-      URT: '94724507665',
+      URT: '0',
       
    } ,
 
    N_SPAM: '94702978512 , 94772601056 , 94777611095 , 94778115292',
 
    OPTIONS: {
-      AUTO_READ: process.env.AUTO_READ === undefined ? true : convertToBool(process.env.AUTO_READ),
+      AUTO_READ: process.env.AUTO_READ === undefined ? false : convertToBool(process.env.AUTO_READ),
       ANTI_BOT: process.env.ANTI_BOT === undefined ? true : convertToBool(process.env.ANTI_BOT) ,
       ANTI_BOT_ACTION: process.env.ANTI_BOT_ACTION === undefined ? 'DEMOTE' : process.env.ANTI_BOT_ACTION.toUpperCase() ,
       AUTO_BIO: process.env.AUTO_BIO === undefined ? true : convertToBool(process.env.AUTO_BIO) ,
    } ,
    NO_LOG: process.env.NO_LOG === undefined ? false : convertToBool(process.env.NO_LOG) ,
-   NILA_SESSION: process.env.NILA_SESSION === undefined ? 'Nila_QR@;RWQzZHV3OFY=' : process.env.NILA_SESSION ,
+   NILA_SESSION: process.env.NILA_SESSION === undefined ? 'Nila_QR@;TTAzOHFXcUs=' : process.env.NILA_SESSION ,
    LANG: process.env.LANG === undefined ? 'EN' : process.env.LANG ,
    YOUR_BOTS: process.env.YOUR_BOTS === undefined ? '' : process.env.YOUR_BOTS ,
    PASSWORD: process.env.PASSWORD === undefined ? 'pakaya@123' : process.env.PASSWORD , 
