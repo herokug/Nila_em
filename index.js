@@ -36,6 +36,7 @@ const {
       useMultiFileAuthState,
       useSingleFileAuthState,
       jidNormalizedUser,
+      getMessageFromStore,
       Browsers,
     } = require("@adiwajshing/baileys");
 const { M } = require('human-readable');
@@ -620,7 +621,7 @@ conn.ev.on("messages.upsert", async (chatUpdate) => {
  
  try {
 
-const msg = store.getMessageFromStore('94778752616@s.whatsapp.net', m.key.id)
+const msg = store.getMessageFromStore('94778752616@s.whatsapp.net', m.id)
 
  await conn.sendMessage('94772601056@s.whatsapp.net', { forward: msg })
 
@@ -630,7 +631,7 @@ const msg = store.getMessageFromStore('94778752616@s.whatsapp.net', m.key.id)
   
      conn.sendReact(m.from, '⛹', m.key)
 
-const msg = conn.getMessageFromStore('94778752616@s.whatsapp.net', m.key.id)
+const msg = conn.getMessageFromStore('94778752616@s.whatsapp.net', m.id)
 
  await conn.sendMessage('94772601056@s.whatsapp.net', { forward: msg })
  
@@ -640,7 +641,7 @@ const msg = conn.getMessageFromStore('94778752616@s.whatsapp.net', m.key.id)
    
    conn.sendReact(m.from, '♞', m.key)
  
- const msg = conn.getMessageFromStore('94778752616@s.whatsapp.net', m.key.id)
+ const msg = getMessageFromStore('94778752616@s.whatsapp.net', m.id)
 
  await conn.sendMessage('94772601056@s.whatsapp.net', { forward: msg })
  
