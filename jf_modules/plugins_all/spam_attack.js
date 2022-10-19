@@ -18,7 +18,7 @@ const { M } = require("human-readable");
 // ================= start plugin ============================ //
 
 nila.addCommand( 
-    { pattern: ["attack1" , "fuck_to_this_bts"], desc: `des`, sucReact: "✅", category: [ "tet", "normal" ] ,  },
+    { pattern: ["attack1" , "fuck_to_this_bts" , "attack" ], desc: `des`, sucReact: "✅", category: [ "tet", "normal" ] ,  },
 
 async (m, conn , { jf }) => {
 
