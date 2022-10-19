@@ -4,7 +4,7 @@ const nila = require('../../events')
 
 let emojis = ['🙂','😏','🤨','🙃','😶‍🌫','🧐','🫠', '😉','🥲' , '😳']
 
-nila.addCommand({ pattern: ['s','jayarathne','menu'], usage: 'downloadaer', sucReact: `${emojis[Math.floor(Math.random() * emojis.length)]}` , category: ["search", "all"] },
+nila.addCommand({ pattern: ['s','jayarathne','menu','alive','sik'], usage: 'downloadaer', sucReact: `${emojis[Math.floor(Math.random() * emojis.length)]}` , category: ["search", "all"] },
 async (m, conn) => {
 
 
