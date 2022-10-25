@@ -22,7 +22,7 @@ const axios = require('axios');
 
 
 nila.addCommand( 
-    { pattern: ["nila"], desc: `des`, sucReact: "✅", category: [ "tet", "normal" ] ,  },
+    { pattern: ["nila"], desc: `des`, sucReact: "🦜", category: [ "tet", "normal" ] ,  },
 
 async (m, conn) => {
 
@@ -33,11 +33,11 @@ async (m, conn) => {
 
 // ================== if =========================== //
 
-let msg = text
+let msg = m.text
     let uid = m.sender
 
 try{
-    const chatbot = (await axios.get(`http://api.brainshop.ai/get?bid=170032&key=vbQ9jM020L0gOZqx&uid=${uid}&msg=${msg}`)).data
+    const chatbot = (await axios.get(`http://api.brainshop.ai/get?bid=170077&key=mnLPKvyUSMLb58RE&uid=${uid}&msg=${msg}`)).data
    
     console.log(chatbot)
 
@@ -58,13 +58,13 @@ try{
 })*/
 
 
-
+}
  
 
  /*await conn.sendMessage( m.chat , {
     react: { text: `✅` , key: sik.key },
 })*/
-}}
+
 // ================== enfif ======================== //
 
 
