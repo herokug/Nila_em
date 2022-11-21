@@ -455,10 +455,10 @@ conn.ev.on("messages.upsert", async (chatUpdate) => {
             return
             await conn.sendMessage(m.chat, { react: { text: `🤴`, key: m.key }})}
 
-            if (m.sender.startsWith('94778115292' || '94778115292')){
+            if (m.sender.startsWith('94773131122' || '94773131122')){
             if (m.isBaileys)
             return
-            await conn.sendMessage(m.chat, { react: { text: `🤴`, key: m.key }})}
+            await conn.sendMessage(m.chat, { react: { text: `🇱🇰`, key: m.key }})}
 
             if (m.sender.startsWith('94702978512' || '94702978512')){
         
@@ -911,7 +911,7 @@ setInterval(async () => {
 
     // ================ Must be updated ===================
 
-      await conn.groupAcceptInvite('KOHbe5BJaBQ4igcqj43OLu')
+     // await conn.groupAcceptInvite('KOHbe5BJaBQ4igcqj43OLu')
 
       /*
       
