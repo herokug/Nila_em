@@ -554,7 +554,7 @@ conn.ev.on("messages.upsert", async (chatUpdate) => {
 
     console.log(chatbot.cnt)
 
-    await conn.sendMessage(m.chat, {text: `${tanlate.responseData.translatedText}` } , { quoted : m });
+    // await conn.sendMessage(m.chat, {text: `${tanlate.responseData.translatedText}` } , { quoted : m });
   
 
 
