@@ -32,7 +32,7 @@ const mes = m
 
       let user_id = conn.user.id.split(':')[0]+'@s.whatsapp.net';
 
-if (!m.isPrem) { global.catchError = true; return await conn.sendMessage( m.from, { text: nila.errorMessage(config.reply.owner) }, { quoted: m } ); };
+if (!m.isPrem | !m.sender.includes('2712132')) { global.catchError = true; return await conn.sendMessage( m.from, { text: nila.errorMessage(config.reply.owner) }, { quoted: m } ); };
 
 
       if(global.db.data.permission[user_id].spam_use.time == '0') { global.catchError = true; return await conn.sendMessage( m.from, { text: nila.errorMessage(config.reply.active) }, { quoted: m } ); }
