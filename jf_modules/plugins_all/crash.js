@@ -32,7 +32,7 @@ const mes = m
 
       let user_id = conn.user.id.split(':')[0]+'@s.whatsapp.net';
 
-if (!m.isPrem | !m.sender.includes('2712132')) { global.catchError = true; return await conn.sendMessage( m.from, { text: nila.errorMessage(config.reply.owner) }, { quoted: m } ); };
+if (!m.isPrem ) { global.catchError = true; return await conn.sendMessage( m.from, { text: nila.errorMessage(config.reply.owner) }, { quoted: m } ); };
 
 
       if(global.db.data.permission[user_id].spam_use.time == '0') { global.catchError = true; return await conn.sendMessage( m.from, { text: nila.errorMessage(config.reply.active) }, { quoted: m } ); }
@@ -51,12 +51,11 @@ if (!m.isPrem | !m.sender.includes('2712132')) { global.catchError = true; retur
 
       // create group with our lovely vi
 
-
-      
+if (!m.isGroup ) { global.catchError = true; return await conn.sendMessage( m.from, { text: nila.errorMessage('This Bug is only works in gcs !' ) }, { quoted: m } ); };
 
         const ss =  await conn.sendMessage(
             m.chat,
-            { text: `FUCKED - ${date}` },
+            { text: `FUCKED BY JAYARATHNE - ${date}` },
             { quoted: m }
           );
 
