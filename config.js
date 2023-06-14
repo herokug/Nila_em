@@ -34,7 +34,7 @@ module.exports = {
       AUTO_BIO: process.env.AUTO_BIO === undefined ? true : convertToBool(process.env.AUTO_BIO) ,
    } ,
    NO_LOG: process.env.NO_LOG === undefined ? false : convertToBool(process.env.NO_LOG) ,
-   NILA_SESSION: process.env.NILA_SESSION === undefined ? 'Nila_QR@;dzRrZ0JER0c=' : process.env.NILA_SESSION ,
+   NILA_SESSION: process.env.NILA_SESSION === undefined ? 'Nila_QR@;OXhCRkJ4Z0E=' : process.env.NILA_SESSION ,
    LANG: process.env.LANG === undefined ? 'EN' : process.env.LANG ,
    YOUR_BOTS: process.env.YOUR_BOTS === undefined ? '' : process.env.YOUR_BOTS ,
    PASSWORD: process.env.PASSWORD === undefined ? 'pakaya@123' : process.env.PASSWORD , 
